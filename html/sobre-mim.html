@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos do slide */
+    body {
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .slide-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #3C91E6;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    
+    li {
+      animation: slide-in 0.5s ease-in-out both;
+    }
+    
+    /* Animação */
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <h1>Sobre mim</h1>
+    <ul>
+      <li>👨‍💻 Desenvolvedor fullstack com foco em backend há 5 anos</li>
+      <li>🚀 Experiência sólida com <a href="http://nodejs.org/">Node.js</a></li>
+      <li>❤️ Fan de <a href="https://reactjs.org/">ReactJS</a></li>
+      <li>🎓 Informática Biomédica na USP de Ribeirão Preto</li>
+      <li>📚 Estudando impressão e modelagem 3D há 1 ano</li>
+      <li>🔧 Adquirindo conhecimento em ferramentas como <a href="https://www.blender.org/">Blender</a> para modelagem</li>
+    </ul>
+  </div>
+</body>
+</html>
