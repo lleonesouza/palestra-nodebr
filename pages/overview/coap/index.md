@@ -1,3 +1,17 @@
+---layout: image-right
+image: pages/overview/coap/imgs/coap.png
+---
+# Ponte entre NodeMCU e NodeJS
+
+
+- Comunicação Sincrona
+- Envia com Javascript
+- Recebe em LUA
+- NodeJs pede **vira esquerda**
+- NodeMCU realiza ação **virar esquerda**
+
+
+
 ---
 layout: image-right
 image: pages/overview/coap/imgs/coap.png
@@ -21,12 +35,3 @@ drawings:
 layout: image-right
 image: pages/overview/coap/imgs/node-lua-communication.png
 ---
-
-# Ponte entre NodeMCU e NodeJS
-
-
-- Comunicação Sincrona
-- Envia com Javascript
-- Recebe em LUA
-- NodeJs pede **vira esquerda**
-- NodeMCU realiza ação **virar esquerda**

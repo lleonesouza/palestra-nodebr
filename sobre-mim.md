@@ -10,3 +10,15 @@ Sobre mim
 -   🔧 Adquirindo conhecimento em ferramentas como
     [Blender](https://www.blender.org/) para modelagem
 :::
+
+
+
+POST '/health' 
+
+POST '/dht11/read'
+
+POST '/l284n/run'
+POST '/l284n/back'
+POST '/l284n/turn-left'
+POST '/l284n/turn-right'
+POST '/l284n/stop'

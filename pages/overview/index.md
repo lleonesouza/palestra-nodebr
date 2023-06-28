@@ -1,4 +1,3 @@
-
 ---
 src: ./coap/index.md
 hide: false
