@@ -1,35 +1,18 @@
 ---
 ---
 
-# Código LUA
+# temperatura e umidade
+```lua {all|1,2|4,5,6,7,8|all}
+-- reading DHT11
+local temp, humi = dht.read11(pin)
 
-- Código que vai ser feito upload no nodemcu
-- Apenas realiza ações
-- Chamada HTTP
-- Usa o template do Toolkit
-
-
----
-
-# Temperatura e Umidade
-```lua
-local status, temp, humi, temp_dec, humi_dec = dht.read11(pin0)
-
--- Check the status and print any errors
-if status == dht.OK then
-    print("Read successful")
-elseif status == dht.ERROR_CHECKSUM then
-    print("Checksum error")
-elseif status == dht.ERROR_TIMEOUT then
-    print("Timeout error")
-end
-
-local data = {
+-- json encodig
+local data = sjson.encode({
     temperature = temp,
     humidity = humi
-}
+})
 
-return sjson.encode(data)
+return data
 ```
 
 
@@ -39,7 +22,7 @@ layout: two-cols
 ---
 
 # Motor
-```lua
+```lua {all|1,2,3,4|4,5,6,7,8|all}
 gpio.mode(pin1, gpio.OUTPUT)
 gpio.mode(pin2, gpio.OUTPUT)
 gpio.mode(pin3, gpio.OUTPUT)

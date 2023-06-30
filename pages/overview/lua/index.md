@@ -1,18 +1,20 @@
+---
+layout: image-right
+image: pages/overview/coap/imgs/lua-background.jpg
+---
 # Lua
 <!-- todo: add lua bg -->
 
-Lua é uma linguagem de script poderosa, eficiente, leve e incorporável. Ele suporta programação procedural, programação orientada a objetos, programação funcional, programação orientada a dados e descrição de dados.s
+Lua é uma linguagem de programação
 
-- 🔬 **Brazil** -  criada nos anos 90 pela PUC-Rio.
-- 🚀 **Alta performance** -  conhecida por sua eficiência e velocidade em aplicações com baixo consumo de recursos.
-- ⚙️ **Customizáve** -  permite aos desenvolvedores estender a linguagem e criar novos recursos de acordo com suas necessidades.
-- 💻  **Plataformas Diversasy** -  suportada em uma ampla gama de sistemas operacionais, como Windows, macOS, Linux, iOS e Android.
-- 📝 **Documentação Abundante** -  a comunidade Lua oferece uma extensa documentação, tutoriais e exemplos para facilitar o aprendizado e uso da linguagem.
+- 🔬 **Brasil** - Criada nos anos 90 pela PUC-Rio
+- 🚀 **Alta Performance** - Eficiênte e baixo consumo de recursos
+- ⚙️ **Customizável** - Criar novos recursos de acordo com suas necessidades
+- 💻  **Diversas Plataformas** -  Windows, macOS, Linux, iOS e Android
+- 📝 **Documentação Abundante** -  Boas documentação, tutoriais e exemplos
 
 <br>
 <br>
-
-
 
 
 ---
@@ -20,19 +22,11 @@ layout: default
 ---
 
 
-
 # Variáveis
 
 <br>
 
-**Lua**
-
-```lua
--- Variáveis em Lua são dinamicamente tipadas
-local nome = "João"
-local idade = 25
-local salario = 2500.50
-```
+<div>
 
 **Javascript**
 
@@ -43,36 +37,30 @@ var idade = 25;
 var salario = 2500.50;
 ```
 
+</div>
+
+**Lua**
+
+```lua 
+-- Variáveis em Lua são dinamicamente tipadas
+local nome = "João"
+local idade = 25
+local salario = 2500.50
+```
+
+
+
+
 ---
 layout: two-cols
 ---
 
 # Estrutura de controle
 
-<br>
-
-**Lua**
-```lua
-local temperatura = 30
-
-if temperatura > 25 then
-    print("Está quente!")
-elseif temperatura > 15 then
-    print("Está agradável!")
-else
-    print("Está frio!")
-end
-```
-::right::
-
-<br>
-<br>
-<br>
-<br>
+<div>
 
 **Javascript**
-
-```javascript 
+```javascript  {all|1|3,4|5,6|7,8|all}
 var temperatura = 30;
 
 if (temperatura > 25) {
@@ -84,26 +72,45 @@ if (temperatura > 25) {
 }
 ```
 
+</div>
+
+::right::
+
+<br>
+<br>
+
+<div>
+
+**Lua**
+
+```lua {all|3,4|5,6|7,8|all}
+local temperatura = 30
+
+if temperatura > 25 then
+    print("Está quente!")
+elseif temperatura > 15 then
+    print("Está agradável!")
+else
+    print("Está frio!")
+end
+```
+</div>
+
+<style>
+    div {
+        padding: 5px;
+        margin-top: 30px;
+    }
+</style>
 ---
 
 # Funções
 
 <br>
 
-**Lua**
-
-```lua
-function saudacao(nome)
-    print("Olá, " .. nome .. "!")
-    return nome
-end
-
-saudacao("Maria")  -- Output: Olá, Maria!
-```
-
 **Javascript**
 
-```javascript 
+```javascript {all|2,3|6|all}
 function saudacao(nome) {
     console.log("Olá, " + nome + "!");
     return nome;
@@ -112,22 +119,25 @@ function saudacao(nome) {
 saudacao("Maria");  // Output: Olá, Maria!
 ```
 
+
+
+**Lua**
+
+```lua {all|2,3|6|all}
+function saudacao(nome)
+    print("Olá, " .. nome .. "!")
+    return nome
+end
+
+saudacao("Maria")  -- Output: Olá, Maria!
+```
+
 ---
 
 # Arrays
 
 <br>
 
-**Lua**
-
-```lua
-local frutas = {"maçã", "banana", "laranja"}
-
-for i, fruta in ipairs(frutas) do
-    print("Eu gosto de " .. fruta)
-end
-
-```
 
 **Javascript**
 
@@ -140,53 +150,79 @@ frutas.forEach(function(fruta) {
 
 ```
 
----
-
-
-# Import e Export
-
-<br>
 
 **Lua**
 
 ```lua
--- meuarquivo.lua
-local function minhaFuncao()
-    print("Olá, mundo Lua!")
+local frutas = {"maçã", "banana", "laranja"}
+
+for i, fruta in ipairs(frutas) do
+    print("Eu gosto de " .. fruta)
 end
 
-return {
-    minhaFuncao = minhaFuncao
-}
-
-
--- outroarquivo.lua
-local meuArquivo = require("meuarquivo")
-
-meuArquivo.minhaFuncao() -- Output: Olá, mundo Lua!
-
 ```
 
-**Javascript**
+
+---
+layout: two-cols
+---
+
+# Import e Export
+
+--
+
+
+*myFunction.js*
+
+
 
 ```javascript 
-// meuarquivo.js
-function minhaFuncao() {
-    console.log("Olá, mundo JavaScript!");
+function myFunction() {
+    console.log("world, hello");
 }
 
-module.exports = {
-    minhaFuncao: minhaFuncao
-};
+export default myFunction
+```
 
 
-// outroarquivo.js
-const meuArquivo = require("./meuarquivo");
+*otherFile.js*
 
-meuArquivo.minhaFuncao(); // Output: Olá, mundo JavaScript!
+```javascript 
+const myFunction = require("./myFunction");
+
+...
 
 ```
 
+::right::
+
+<br>
+<br>
+<br>
+
+
+*myFunction.lua*
+
+```lua
+local function myFunction()
+    print("world, hello")
+end
+
+return myFunction
+```
+
+*otherFile.lua*
+
+```lua
+local myFunction = require("myFunction")
+
+...
+
+```
+
+---
+layout: image-right
+image: pages/overview/coap/imgs/lua-logo.png
 ---
 
 # Aprenda mais sobre Lua

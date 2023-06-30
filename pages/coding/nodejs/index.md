@@ -76,13 +76,10 @@ function Request(options: coap.CoapRequestParams, payload: any){
 ```
 
 ---
-
-Video fazendo request no Swagger e o motor girando
-<img src="pages/coding/nodejs/Peek 2023-06-28 00-16.gif" alt="GIF" />
-
-
-
+src: ./requests.md
+hide: false
 ---
+
 
 # Request Health
 
@@ -99,5 +96,5 @@ img.absolute {
 }
 </style>
 
-
+---
 

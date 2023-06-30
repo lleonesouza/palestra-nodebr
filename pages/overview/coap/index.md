@@ -1,15 +1,11 @@
----layout: image-right
-image: pages/overview/coap/imgs/coap.png
----
-# Ponte entre NodeMCU e NodeJS
 
+<Ponte/>
 
-- Comunicação Sincrona
+<!-- - Comunicação Sincrona
 - Envia com Javascript
 - Recebe em LUA
 - NodeJs pede **vira esquerda**
-- NodeMCU realiza ação **virar esquerda**
-
+- NodeMCU realiza ação **virar esquerda** -->
 
 
 ---
@@ -28,10 +24,3 @@ Protocolo de comunicação leve e eficiente para dispositivos IoT, permitindo qu
 - POST, GET
 - Leve (menos recurso)
 
----
-drawings: 
-  enabled: dev
-  persist: true
-layout: image-right
-image: pages/overview/coap/imgs/node-lua-communication.png
----
