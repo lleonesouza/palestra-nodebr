@@ -5,31 +5,31 @@
         <div class="image-container">
             <div>
                 <v-click at="2">
-                    <img src="pages/overview/coap/imgs/lua-logo.png" class="logo-lua">
+                    <img src="./imgs/lua-logo.png" class="logo-lua">
                 </v-click>
                 <v-click at="1">
-                    <img src="pages/overview/coap/imgs/esp8266.png" class="logo-esp8266">
+                    <img src="./imgs/esp8266.png" class="logo-esp8266">
                 </v-click>
                 <v-click at="0">
-                    <img src="pages/overview/coap/imgs/nodemcu-logo.png" class="logo-nodemcu">
+                    <img src="./imgs/nodemcu-logo.png" class="logo-nodemcu">
                 </v-click>
             </div>
 
             <div>
                 <v-click at="3">
-                    <img src="pages/overview/coap/imgs/ponte.png" class="ponte">
+                    <img src="./imgs/ponte.png" class="ponte">
                 </v-click>
                 <v-click at="6">
-                    <img src="pages/overview/coap/imgs/coap-rfc.png" class="logo-coap">
+                    <img src="./imgs/coap-rfc.png" class="logo-coap">
                 </v-click>
             </div>
      
             <div>
                 <v-click at="4">
-                    <img src="pages/overview/coap/imgs/js-logo.png" class="logo-js">
+                    <img src="./imgs/js-logo.png" class="logo-js">
                 </v-click>
                 <v-click at="5">
-                    <img src="pages/overview/coap/imgs/nodejs-logo.png" class="logo-nodejs">
+                    <img src="./imgs/nodejs-logo.png" class="logo-nodejs">
                 </v-click>
             </div>
           

@@ -1,17 +1,9 @@
 ---
 ---
 
-# EndPoints
-
-<ApiCalls />
-
-
----
----
-
 # COAP Config
 
-```typescript
+```typescript {all|1|4,5,6,7|all}
 import * as coap from 'coap';
 
 const options: coap.CoapRequestParams = {
@@ -28,8 +20,7 @@ const options: coap.CoapRequestParams = {
 # Controller
 
 
-
-```typescript
+```typescript {all|2|3,4,5,6,7,8|all|1}
 import Request from "./Request"
 import {Response, Request} from "express"
 
@@ -45,10 +36,10 @@ function Controller(req: Request, res: Response){
 ---
 
 
-```typescript
+```typescript {all|1|3|4|3,5|7,8,9,10,11,12,13,14,15,16,17|19,20,21,22|3,23|24|all}
 import * as coap from 'coap';
 
-function Request(options: coap.CoapRequestParams, payload: any){
+function Request(options: coap.CoapRequestParams, payload: string){
   return new Promise((resolve, reject) => {
     const req = coap.request(options);
 
@@ -76,25 +67,12 @@ function Request(options: coap.CoapRequestParams, payload: any){
 ```
 
 ---
+
+# EndPoints
+
+<ApiCalls />
+
+---
 src: ./requests.md
 hide: false
 ---
-
-
-# Request Health
-
-<img src="pages/coding/nodejs/Peek 2023-06-28 00-16.gif" alt="GIF" />
-<img v-click class="absolute" src="pages/coding/nodejs/Peek 2023-06-28 00-03.gif" alt="GIF" />
-
-<style>
-img.absolute { 
-     position: fixed;
-  bottom: 0;
-  right: 0;
-   width: 300px;
-  border: 3px solid #73AD21;
-}
-</style>
-
----
-

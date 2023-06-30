@@ -13,20 +13,6 @@ O NodeMCU é uma plataforma de desenvolvimento IoT (Internet das Coisas) baseada
 - Interface UART, I2C e SPI
 - Plataforma de prototipagem e desenvolvimento acessível
 
-
-<img src="pages/overview/coap/imgs/esp8266.png" alt="Ícone de prototipagem">
-
-<style>
-img {
-    position: absolute;
-    bottom: 0%;
-    left: 25%;
-    width: 150px;
-    height: auto;
-}
-</style>
-
-
 ---
 layout: image-right
 image: https://d229kd5ey79jzj.cloudfront.net/791/images/791_1_H.png

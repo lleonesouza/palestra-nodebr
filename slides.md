@@ -30,5 +30,3 @@ hide: false
 src: ./pages/coding/index.md
 hide: false
 ---
-
-

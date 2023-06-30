@@ -1,6 +1,5 @@
 # Projeto JEEP NodeBR
 
-
 <img class="jeep-diagonal" src="pages/overview/project/imgs/jeep-diagonal.png"/>
 <img class="jeep-frente" src="pages/overview/project/imgs/jeep-frente.png"/>
 <img class="jeep-lado" src="pages/overview/project/imgs/jeep-lado.png"/>
@@ -24,31 +23,44 @@
     width: 300px
 }
 
-
-
 </style>
-    
 
 ---
 
-# Requisitos:
+# Requisitos
 
-
+<div v-click>
 <img class="usb-cable" src="pages/overview/project/imgs/usb-cable.png"/>
+</div>
 
+<div v-click>
 <img class="esp8266" src="pages/overview/project/imgs/esp8266.png"/>
+</div>
 
+<div v-click>
 <img class="font-12v-2" src="pages/overview/project/imgs/battery.webp"/>
+</div>
+
+<div v-click>
 <img class="font-12v-3" src="pages/overview/project/imgs/battery.webp"/>
+</div>
+
+<div v-click>
 <img class="font-12v" src="pages/overview/project/imgs/battery.webp"/>
+</div>
 
+<div v-click>
 <img class="ponte-h" src="pages/overview/project/imgs/ponte-h.png"/>
+</div>
 
+<div v-click>
 <img class="wires" src="pages/overview/project/imgs/wires.png"/>
+</div>
 
+<div v-click>
 <img class="motors" src="pages/overview/project/imgs/motors.png"/>
+</div>
 
-<img class="mh-sensor" src="pages/overview/coap/imgs/mh-sensor.png"/>
 
 <style>
 .usb-cable {
@@ -64,7 +76,6 @@
     top: 25%;
     width: 200px
 }
-
 
 .font-12v-2 {
     position: absolute;
@@ -102,18 +113,12 @@
 }
 
 .wires {
-    position: absolute;
-    left: 5%;
-    top: 10%;
-    width: 180px
-}
-
-.mh-sensor {
-    position: absolute;
+   position: absolute;
     left: 35%;
     bottom: 10%;
     width: 300px
 }
 
+
+
 </style>
-    
